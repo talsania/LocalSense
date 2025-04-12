@@ -1,43 +1,54 @@
-# Local Semantic Search Engine
-using pre-trained Sentence Transformer model (all-MiniLM-L6-v2)
+# Local Semantic Search Engine 🔍 
+This project explores how to build a simple, local, privacy-focused semantic search engine using Python, built with Streamlit, Sentence Transformers, and ChromaDB.
 
-This is a fun project exploring how to build a simple, local, privacy-focused semantic search engine using Python. It's built with Streamlit, Sentence Transformers, and ChromaDB.
+> It uses modern NLP to understand what you're looking for, not just matching keywords. It works on your own machine, with your own files, so your data stays with you.
+(Currently handles PDFs with plans to support more formats soon)
 
-The goal is to index local documents (currently PDFs) and search through their content based on meaning, not just keywords, keeping everything on your own machine.
+## Getting started 📜
 
-## Features
+- Python 3.8+
+- CUDA drivers (optional)
 
-* **Local First:** All processing and data storage happen on your machine. No data is sent to external servers -hence privacy.
-* **Semantic Search:** Uses sentence embeddings (via Sentence Transformers) to understand query intent.
-* **Vector Storage:** Uses ChromaDB for efficient local vector storage and retrieval.
-* **Simple UI:** Built with Streamlit for easy file uploading and searching.
-* **Chunking:** Splits documents into smaller chunks for more relevant results.
+## Installation 💽
 
-## Installation
+```bash
+git clone https://github.com/talsania/local-semantic-search.git
+cd local-semantic-search
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/talsania/local-semantic-search](https://github.com/talsania/local-semantic-search.git)
-    cd local-semantic-search
-    ```
-2.  **Create and activate a Python virtual environment:**
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Note: The first time you run the app, the sentence transformer model will be downloaded, which might take a moment).*
+## Usage 🖲️
 
-## Usage
+```bash
+streamlit run app.py
+```
 
-1.  **Run the Streamlit app:**
-    ```bash
-    streamlit run app.py
-    ```
-2.  **Upload Documents:** Use the file uploader in the web interface to select PDF documents. Click "Process Uploaded Files". Wait for processing to complete (this involves chunking and embedding).
-3.  **Search:** Enter your query in the search box and click "Search". Relevant chunks from your documents will be displayed.
+## Features ✨
 
-If you have ideas, find bugs, or want to contribute code, please feel free to open an issue or submit a pull request on GitHub. All contributions are appreciated.
+- Privacy-first: All processing happens locally
+- Semantic search using neural embeddings
+- PDF document indexing and search
+- Fast retrieval with vector database
+- Simple upload and search interface
+
+## Technologies 👨‍💻
+
+- Sentence Transformers (all-MiniLM-L6-v2)
+- ChromaDB
+- Streamlit
+- NLTK
+- PyPDF2
+
+## Roadmap 🛣️
+
+- Custom web interface
+- Integration with more powerful models
+- Support for additional document formats
+- OCR capabilities
+- Automated document ingestion
+- Role-based access control
+- Usage analytics
+
+> If you have ideas, find bugs, or want to contribute code, please feel free to open an issue or submit a pull request on GitHub. All contributions are appreciated.

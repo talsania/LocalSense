@@ -18,7 +18,6 @@ The goal is to index local documents (currently PDFs) and search through their c
 
 1.  **Clone the repository:**
     ```bash
-    # Replace talsania/local-semantic-search with the actual path
     git clone [https://github.com/talsania/local-semantic-search](https://github.com/talsania/local-semantic-search.git)
     cd local-semantic-search
     ```

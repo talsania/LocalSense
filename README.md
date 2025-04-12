@@ -1,12 +1,13 @@
 # Local Semantic Search Engine
+using pre-trained Sentence Transformer model (all-MiniLM-L6-v2)
 
-Welcome! This is a fun project exploring how to build a simple, local, privacy-focused semantic search engine using Python. It's built with Streamlit, Sentence Transformers, and ChromaDB.
+This is a fun project exploring how to build a simple, local, privacy-focused semantic search engine using Python. It's built with Streamlit, Sentence Transformers, and ChromaDB.
 
 The goal is to index local documents (currently PDFs) and search through their content based on meaning, not just keywords, keeping everything on your own machine.
 
 ## Features
 
-* **Local First:** All processing and data storage happen on your machine. No data is sent to external servers.
+* **Local First:** All processing and data storage happen on your machine. No data is sent to external servers -hence privacy.
 * **Semantic Search:** Uses sentence embeddings (via Sentence Transformers) to understand query intent.
 * **Vector Storage:** Uses ChromaDB for efficient local vector storage and retrieval.
 * **Simple UI:** Built with Streamlit for easy file uploading and searching.
@@ -17,9 +18,9 @@ The goal is to index local documents (currently PDFs) and search through their c
 
 1.  **Clone the repository:**
     ```bash
-    # Replace YOUR_USERNAME/YOUR_REPOSITORY_NAME with the actual path
+    # Replace talsania/local-semantic-search with the actual path
     git clone [https://github.com/talsania/local-semantic-search](https://github.com/talsania/local-semantic-search.git)
-    cd YOUR_REPOSITORY_NAME
+    cd local-semantic-search
     ```
 2.  **Create and activate a Python virtual environment:**
     ```bash

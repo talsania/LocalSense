@@ -12,7 +12,6 @@ The goal is to index local documents (currently PDFs) and search through their c
 * **Vector Storage:** Uses ChromaDB for efficient local vector storage and retrieval.
 * **Simple UI:** Built with Streamlit for easy file uploading and searching.
 * **Chunking:** Splits documents into smaller chunks for more relevant results.
-* **(Add more features as you develop them)**
 
 ## Installation
 
